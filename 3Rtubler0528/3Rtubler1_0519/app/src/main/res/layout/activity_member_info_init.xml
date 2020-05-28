@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="회원정보 입력"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="이름" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="핸드폰 번호" />
+
+    <EditText
+        android:id="@+id/birthdayEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneEditText"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="생년월일" />
+
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthdayEditText"
+        android:layout_marginTop="140dp"
+        android:background="#FF9800"
+        android:textColor="#FFFFFF"
+        android:text="Change" />
+
+</RelativeLayout>
