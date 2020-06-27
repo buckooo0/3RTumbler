@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="회원 가입"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#00CC6A"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emaileditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="이메일"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordeditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/passwordcheckEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="비밀번호 재확인"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00CC6A"
+        android:layout_marginTop="7dp"
+        android:text="회원 가입하기"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        app:srcCompat="@drawable/banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        />
+
+</LinearLayout>

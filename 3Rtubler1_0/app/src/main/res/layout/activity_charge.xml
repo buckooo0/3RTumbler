@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/Title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:src="@drawable/reuserr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 텀블러 잔액 충전"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/Title_layout"
+        android:layout_marginTop="60dp"
+        android:id="@+id/charge_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="충전 금액"/>
+    <LinearLayout
+        android:id="@+id/balanace_select"
+        android:layout_below="@id/charge_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:textSize="20dp"
+            android:text="1만원"
+            android:background="@drawable/btn_bg"/>
+        <Button
+            android:id="@+id/plus_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:textSize="20dp"
+            android:text="5만원"
+            android:background="@drawable/btn_bg"/>
+        <Button
+            android:id="@+id/plus_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:textSize="20dp"
+            android:text="직접 입력"
+            android:background="@drawable/btn_bg"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/way_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanace_select"
+        android:layout_marginTop="20dp"
+        android:text="결제 수단"/>
+    <RadioGroup
+        android:id="@+id/way_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/way_text"
+        >
+
+        <RadioButton
+            android:id="@+id/kakaopay_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오페이"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/pay_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타"
+            android:layout_weight="1"/>
+
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/chargeamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/way_group"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:hint="￦" />
+
+    <TextView
+        android:id="@+id/balanace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chargeamount"
+        android:layout_marginTop="36dp"
+        android:textSize="20dp"
+        android:text="현재잔액"/>
+
+
+    <Button
+        android:id="@+id/charge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="#018574"
+        android:text="충전하기"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF" />
+
+
+
+</RelativeLayout>
