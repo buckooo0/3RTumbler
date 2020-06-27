@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="잔액충전"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/balancechargeamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="￦"
+        android:inputType="number"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/chargeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="충전하기" />
+
+    <Button
+        android:id="@+id/returnmainactivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인화면으로 되돌아가기" />
+
+    <Button
+        android:id="@+id/charge10000Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10000원 충전" />
+</LinearLayout>
